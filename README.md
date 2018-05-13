@@ -1,6 +1,6 @@
 # Clicker Game
 
-[**Github Page**](https://jp-ske15.github.io/Project-2--Clicker-Game/)
+[**Github Page**](https://jp-ske15.github.io/Project2-Clicker-Game/)
 
 **Contents**
 
