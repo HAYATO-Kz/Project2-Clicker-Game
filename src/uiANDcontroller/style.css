@@ -1,0 +1,13 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.mainbackground{
+    -fx-background-image: url("/picture/MainmenuBackground.jpg");
+}
+.gamebackground{
+    -fx-background-image: url("/picture/BG.jpg");
+}
+.Unitbackground{
+    -fx-background-image: url("/picture/12345.jpg");
+}
+.monster{
+    -fx-background-image: url("/picture/try.jpg");
+}

@@ -1,37 +1,79 @@
-## Welcome to GitHub Pages
+# Clicker Game
 
-You can use the [editor on GitHub](https://github.com/JP-SKE15/Project2-Clicker-Game/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[**Github Page**](https://jp-ske15.github.io/Project-2--Clicker-Game/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Contents**
 
-### Markdown
+- [Detail](#detail-of-clicker-game)
+- [Game Feature](#game-feature)
+- [Technology and Knowledge](#technology-and-knowledge-that-i-used)
+- [How to install](#how-to-install)
+- [Contributors](#contributors)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Detail of clicker game
+Clicker game is game that player need to gain money from killing monster.if player have money enough.player can buy new weapon, upgrade weapon, spawn new unit and upgrade unit.
 
-```markdown
-Syntax highlighted code block
+## Game Feature
+**main menu window.**
 
-# Header 1
-## Header 2
-### Header 3
+![Mwindow](RMpicture/pic.png)
 
-- Bulleted
-- List
+**Log-in window.** window that contain log-in and register part,player can register new id or if player already have id, game will continue.
 
-1. Numbered
-2. List
+![Lwindow](RMpicture/pic2.png)
 
-**Bold** and _Italic_ and `Code` text
+**Game window [hero part].** player can upgrade weapon or buy new weapon in this part.
 
-[Link](url) and ![Image](src)
-```
+![GwindowH](RMpicture/pic3.png)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**Game window [unit part].** player can spawn unit or upgrade unit in this part.
 
-### Jekyll Themes
+![GwindowU](RMpicture/last.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JP-SKE15/Project2-Clicker-Game/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**Game will auto save when player close window**
 
-### Support or Contact
+### Packages
+- **Alert** Contains alert box  interface with message.
+- **Register** Contains database's part.
+- **monsterANDmoney**  Contains money and monster activity class and enum for storage monster.
+- **music** Folder for music file.
+- **picture** Folder for picture file.
+- **sound** Contains Playing sound class.
+- **uiANDcontroller** Contains all of UI and Controller class for this project.
+- **unitANDhero** Contains unit and hero activity
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Technology and Knowledge that I used
+
+### JavaFX
+for user interface.
+
+### SQLite
+for database
+
+### Patterns
+In this project, I use
+- **Observer Pattern**: Use for update and show value for purse, monsterHP, etc.
+- **Singleton Pattern**: Use for make easy way to get data for setting game.
+ 
+### Enum
+ Use to storage unit, music, weapon and monster data
+
+## How to install
+
+You need: 
+
+	- Java ver. 8 or newer
+
+	- Clicker-Game.jar
+
+
+To run the file: 
+
+1. Click 'Clicker-Game.jar in folder "GAME"  above to download or click [here](https://github.com/JP-SKE15/Project-Clicker2/blob/master/GAME/Clicker-Game.jar).
+2. Runs 'Clicker-Game.jar' file
+
+
+
+## Contributor
+
+- [**Hayato Kawai**](https://github.com/JP-SKE15) 6010545978

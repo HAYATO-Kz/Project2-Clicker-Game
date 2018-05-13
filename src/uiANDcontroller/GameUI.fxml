@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uiANDcontroller.GameUIController">
+   <children>
+      <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="150.0" text="Money : " textFill="#14fb00">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin>
+      </Label>
+      <Label fx:id="purse" prefHeight="50.0" prefWidth="127.0" text="1" textFill="#14fb00">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <Label prefHeight="50.0" prefWidth="83.0" text="Level : " textFill="#14fb00">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font></Label>
+      <Label fx:id="level" alignment="CENTER" prefHeight="50.0" prefWidth="91.0" text="Label" textFill="#14fb00">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <Label prefHeight="50.0" prefWidth="117.0" text="Round  : " textFill="#14fb00">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="round" alignment="CENTER" prefHeight="50.0" prefWidth="87.0" text="Label" textFill="#14fb00">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+         <FlowPane.margin>
+            <Insets right="30.0" />
+         </FlowPane.margin>
+      </Label>
+      <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="95.0" text="Music :" textFill="#14fb00">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+         <FlowPane.margin>
+            <Insets left="205.0" right="10.0" />
+         </FlowPane.margin>
+      </Label>
+      <ComboBox fx:id="musicbox" onAction="#changeMusic" prefHeight="25.0" prefWidth="162.0" />
+      <TabPane prefHeight="592.0" prefWidth="491.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Hero">
+               <content>
+                  <FlowPane prefHeight="400.0" prefWidth="26.0">
+                     <children>
+                        <BorderPane prefHeight="120.0" prefWidth="450.0">
+                           <left>
+                              <ImageView fx:id="weaponUse" fitHeight="138.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </left>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <right>
+                              <Button mnemonicParsing="false" onAction="#upgradeWeapon" prefHeight="74.0" prefWidth="74.0" text="Upgrade" textFill="#14fb00" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Button>
+                           </right>
+                           <FlowPane.margin>
+                              <Insets />
+                           </FlowPane.margin>
+                           <top>
+                              <AnchorPane prefHeight="25.0" prefWidth="410.0" BorderPane.alignment="CENTER" />
+                           </top>
+                           <bottom>
+                              <AnchorPane prefHeight="25.0" prefWidth="410.0" BorderPane.alignment="CENTER" />
+                           </bottom>
+                           <center>
+                              <FlowPane prefHeight="90.0" prefWidth="246.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label fx:id="weaponUseName" alignment="CENTER" prefHeight="38.0" prefWidth="235.0" text="weapon" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="26.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="99.0" text="Damage :  " textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="weaponUseDamage" prefHeight="38.0" prefWidth="102.0" text="Label" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="99.0" text="Cost :  " textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="weaponUseCost" prefHeight="38.0" prefWidth="102.0" text="Label" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="120.0" prefWidth="450.0">
+                           <left>
+                              <ImageView fx:id="weaponNext" fitHeight="138.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </left>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <right>
+                              <Button mnemonicParsing="false" onAction="#setNewWeapon" prefHeight="74.0" prefWidth="74.0" text="Buy" textFill="#14fb00" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Button>
+                           </right>
+                           <top>
+                              <AnchorPane prefHeight="25.0" prefWidth="410.0" BorderPane.alignment="CENTER" />
+                           </top>
+                           <bottom>
+                              <AnchorPane prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </bottom>
+                           <center>
+                              <FlowPane prefHeight="90.0" prefWidth="246.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label fx:id="weaponNextName" alignment="CENTER" prefHeight="38.0" prefWidth="235.0" text="next weapon" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="26.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="99.0" text="Damage :  " textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="weaponNextDamage" prefHeight="38.0" prefWidth="102.0" text="Label" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="99.0" text="Cost :  " textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="weaponNextCost" prefHeight="38.0" prefWidth="102.0" text="Label" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </center>
+                        </BorderPane>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </FlowPane>
+               </content></Tab>
+          <Tab text="Unit">
+               <content>
+                  <FlowPane prefHeight="567.0" prefWidth="491.0">
+                     <children>
+                        <BorderPane prefHeight="143.0" prefWidth="452.0">
+                           <left>
+                              <ImageView fitHeight="104.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </BorderPane.margin>
+                                 <image>
+                                    <Image url="@../picture/UNITA.png" />
+                                 </image>
+                              </ImageView>
+                           </left>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <right>
+                              <Button mnemonicParsing="false" onAction="#Unit1" prefHeight="74.0" prefWidth="74.0" text="+" textFill="#14fb00" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="29.0" />
+                                 </font>
+                              </Button>
+                           </right>
+                           <FlowPane.margin>
+                              <Insets />
+                           </FlowPane.margin>
+                           <center>
+                              <FlowPane prefHeight="108.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="31.0" prefWidth="238.0" text="UNIT A" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets bottom="5.0" />
+                                       </FlowPane.margin></Label>
+                                    <Label fx:id="status" alignment="CENTER" prefHeight="17.0" prefWidth="238.0" text="SPAWN" textFill="#14fb00">
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" />
+                                       </FlowPane.margin>
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="99.0" text="Cost :  " textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="20.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="unit1Cost" prefHeight="38.0" prefWidth="102.0" text="Label" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets top="10.0" />
+                                 </BorderPane.margin>
+                              </FlowPane>
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="120.0" prefWidth="450.0">
+                           <center>
+                              <FlowPane prefHeight="32.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="31.0" prefWidth="238.0" text="UNIT B" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets bottom="5.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="status2" alignment="CENTER" prefHeight="17.0" prefWidth="238.0" text="SPAWN" textFill="#14fb00">
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" />
+                                       </FlowPane.margin>
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="99.0" text="Cost :  " textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="20.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="unit2Cost" prefHeight="38.0" prefWidth="102.0" text="Label" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets top="10.0" />
+                                 </BorderPane.margin>
+                              </FlowPane>
+                           </center>
+                           <left>
+                              <ImageView fitHeight="138.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </BorderPane.margin>
+                                 <image>
+                                    <Image url="@../picture/UNITB.png" />
+                                 </image>
+                              </ImageView>
+                           </left>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <right>
+                              <Button mnemonicParsing="false" onAction="#Unit2" prefHeight="74.0" prefWidth="74.0" text="+" textFill="#14fb00" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="29.0" />
+                                 </font>
+                              </Button>
+                           </right>
+                        </BorderPane>
+                        <BorderPane prefHeight="120.0" prefWidth="450.0">
+                           <center>
+                              <FlowPane prefHeight="135.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="31.0" prefWidth="238.0" text="UNIT C" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets bottom="5.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="status3" alignment="CENTER" prefHeight="17.0" prefWidth="238.0" text="SPAWN" textFill="#14fb00">
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" />
+                                       </FlowPane.margin>
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="99.0" text="Cost :  " textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="20.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="unit3Cost" prefHeight="38.0" prefWidth="102.0" text="Label" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets top="10.0" />
+                                 </BorderPane.margin>
+                              </FlowPane>
+                           </center>
+                           <left>
+                              <ImageView fitHeight="106.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </BorderPane.margin>
+                                 <image>
+                                    <Image url="@../picture/UNITC.png" />
+                                 </image>
+                              </ImageView>
+                           </left>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <right>
+                              <Button mnemonicParsing="false" onAction="#Unit3" prefHeight="74.0" prefWidth="74.0" text="+" textFill="#14fb00" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="29.0" />
+                                 </font>
+                              </Button>
+                           </right>
+                        </BorderPane>
+                        <BorderPane prefHeight="120.0" prefWidth="450.0">
+                           <center>
+                              <FlowPane prefHeight="135.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="31.0" prefWidth="238.0" text="UNIT D" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets bottom="5.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="status4" alignment="CENTER" prefHeight="17.0" prefWidth="238.0" text="SPAWN" textFill="#14fb00">
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" />
+                                       </FlowPane.margin>
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="99.0" text="Cost :  " textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="20.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="unit4Cost" prefHeight="38.0" prefWidth="102.0" text="Label" textFill="#14fb00">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets top="10.0" />
+                                 </BorderPane.margin>
+                              </FlowPane>
+                           </center>
+                           <left>
+                              <ImageView fitHeight="138.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </BorderPane.margin>
+                                 <image>
+                                    <Image url="@../picture/UNITD.png" />
+                                 </image>
+                              </ImageView>
+                           </left>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <right>
+                              <Button mnemonicParsing="false" onAction="#Unit4" prefHeight="74.0" prefWidth="74.0" text="+" textFill="#14fb00" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="29.0" />
+                                 </font>
+                              </Button>
+                           </right>
+                        </BorderPane>
+                     </children>
+                  </FlowPane>
+               </content></Tab>
+        </tabs>
+         <FlowPane.margin>
+            <Insets left="10.0" />
+         </FlowPane.margin>
+      </TabPane>
+      <FlowPane prefHeight="592.0" prefWidth="659.0">
+         <children>
+            <ImageView fx:id="monsterp" fitHeight="501.0" fitWidth="578.0" onMouseEntered="#enterArea" onMouseExited="#exitArea" onMousePressed="#attack" onMouseReleased="#attacked" pickOnBounds="true" preserveRatio="true">
+               <FlowPane.margin>
+                  <Insets left="50.0" />
+               </FlowPane.margin>
+               <viewport>
+                  <Rectangle2D minX="250.0" minY="250.0" />
+               </viewport>
+            </ImageView>
+            <Label fx:id="monsterNamelabel" alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0" textFill="#14fb00">
+               <FlowPane.margin>
+                  <Insets left="90.0" />
+               </FlowPane.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="29.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="105.0" text="'s  HP  :" textFill="#14fb00">
+               <font>
+                  <Font name="Berlin Sans FB" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="monsterHPlabel" prefHeight="50.0" prefWidth="195.0" textFill="#14fb00">
+               <font>
+                  <Font name="Berlin Sans FB" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </FlowPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+   </padding>
+</FlowPane>
