@@ -69,8 +69,8 @@ You need:
 
 To run the file: 
 
-1. Click 'Clicker-Game.jar in folder "GAME"  above to download or click [here](https://github.com/JP-SKE15/Project2-Clicker-Game/blob/master/GAME/Clicker%20Game.jar).
-2. Runs 'Clicker-Game.jar' file
+1. Click 'Clicker Game.jar in folder "GAME"  above to download or click [here](https://github.com/JP-SKE15/Project2-Clicker-Game/blob/master/GAME/Clicker%20Game.jar).
+2. Runs 'Clicker Game.jar' file
 
 
 
