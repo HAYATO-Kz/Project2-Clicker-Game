@@ -67,7 +67,7 @@ You need:
 
 	- Java ver. 8 or newer
 
-	- Clicker-Game.jar
+	- Clicker Game.jar
 
 
 To run the file: 
