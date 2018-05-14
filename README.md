@@ -47,6 +47,9 @@ Clicker game is game that player need to gain money from killing monster.if play
 ### JavaFX
 for user interface.
 
+### JavaFX Scene Builder 2.0
+for every scene's design in my project
+
 ### SQLite
 for database
 
