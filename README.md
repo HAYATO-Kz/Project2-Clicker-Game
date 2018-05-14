@@ -5,7 +5,7 @@
 **Contents**
 
 - [Detail](#detail-of-clicker-game)
-- [Game Feature](#game-feature)
+- [Game Feature](#game's-display)
 - [Technology and Knowledge](#technology-and-knowledge-that-i-used)
 - [How to install](#how-to-install)
 - [Contributors](#contributors)
