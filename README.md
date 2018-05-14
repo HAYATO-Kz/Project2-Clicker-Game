@@ -13,7 +13,7 @@
 ## Detail of clicker game
 Clicker game is game that player need to gain money from killing monster.if player have money enough.player can buy new weapon, upgrade weapon, spawn new unit and upgrade unit.
 
-## Game Feature
+## Game's Display
 **main menu window.**
 
 ![Mwindow](RMpicture/pic.png)
@@ -60,6 +60,9 @@ In this project, I use
  
 ### Enum
  Use to storage unit, music, weapon and monster data
+ 
+ ### Thread
+ for unit's auto attacking
 
 ## How to install
 
