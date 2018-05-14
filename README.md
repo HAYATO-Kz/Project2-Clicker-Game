@@ -50,8 +50,8 @@ for user interface.
 ### JavaFX Scene Builder 2.0
 for every scene's design in my project
 
-### SQLite
-for database
+### Database
+for storage data for player can continue playing from last time that player play
 
 ### Patterns
 In this project, I use
