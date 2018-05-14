@@ -51,7 +51,7 @@ for user interface.
 for every scene's design in my project
 
 ### Database
-for storage data for player can continue playing from last time that player play
+for save data for player can continue playing from last time that player play
 
 ### Patterns
 In this project, I use
